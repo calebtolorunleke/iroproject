@@ -1,0 +1,14 @@
+.heading {
+  color: blue;
+  font-size: 40px;
+}
+.product-card {
+  width: 280px;
+  background-color: aliceblue;
+  text-align: center;
+  padding: 10px;
+}
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
