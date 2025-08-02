@@ -18,7 +18,7 @@ const Simplestate = () => {
     <div>
       <h1 className="text-4xl">Use State Basics </h1>
       <p className="text-3xl">The Current Count is : {count}</p>
-      <p className="text-3xl">Welcome {user}</p>
+      <p className="text-3xl">Welcome, {user}</p>
       <button
         className="bg-blue-600 text-white w-[120px] h-[40px] border-r rounded-lg p-1"
         onClick={() => setUser("John")}
