@@ -18,6 +18,7 @@ const ComplexState = () => {
   const clearCart = () => {
     setProducts([]);
   };
+
   return (
     <div className="heading text-center">
       <h2 className="text-3xl font-bold">COMPLEX STATE</h2>

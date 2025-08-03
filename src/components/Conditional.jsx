@@ -19,7 +19,7 @@ const Conditional = () => {
   return (
     <div>
       <h1 className="text-4xl font-bold uppercase">conditional rendering</h1>
-      <button className="cutom-btn">Log Inn</button>
+      <button className="cutom-btn">Log In</button>
       {isLoading ? (
         <h1>Loading...</h1>
       ) : (
