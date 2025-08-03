@@ -15,9 +15,11 @@ const Cart = () => {
 
   const getTotalPrice = cart.reduce((total, item) => total + item.price, 0);
 
-  const handleRemoveItem = (itemid){
-    console.log(itemid)
-  }
+  const handleRemoveItem = (itemid) => {
+    // console.log(itemid);
+    const remainingItems = cart.filter((Products) => Products.id !== itemid);
+    setCart(remainingItems);
+  };
 
   if (cart.length === 0) {
     return (
@@ -41,7 +43,13 @@ const Cart = () => {
       </p>
       <div className="flex flex-col gap-5">
         {cart.map((item) => {
-          return <SingleCartItem key={item.id} {...item} handleRemoveItem={handleRemoveItem}/>;
+          return (
+            <SingleCartItem
+              key={item.id}
+              {...item}
+              handleRemoveItem={handleRemoveItem}
+            />
+          );
         })}
       </div>
       <div className="flex justify-between items-center text-2xl">

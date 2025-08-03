@@ -7,7 +7,12 @@ const SingleCartItem = ({ id, img, name, price, handleRemoveItem }) => {
       <div className="w-[50%] flex justify-end flex-col ">
         <p>{name}</p>
         <p>${price}</p>
-        <button className="custom-btn cursor-pointer mt-2.5">Remove</button>
+        <button
+          className="custom-btn cursor-pointer mt-2.5"
+          onClick={() => handleRemoveItem(id)}
+        >
+          Remove
+        </button>
       </div>
     </div>
   );
