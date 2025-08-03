@@ -1,5 +1,6 @@
 import "./App.css";
 import ComplexState from "./components/ComplexState";
+import Conditional from "./components/Conditional";
 import EventHandling from "./components/EventHandling";
 import Products from "./components/Products";
 import Simplestate from "./components/Simplestate";
@@ -38,6 +39,7 @@ function App() {
       <EventHandling />
       <Simplestate />
       <ComplexState />
+      <Conditional />
       {/* <section className="flex gap-5">
         {products.map((product, index) => {
           return <Products key={product.id} {...product} />;
