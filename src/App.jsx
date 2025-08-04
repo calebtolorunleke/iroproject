@@ -1,4 +1,5 @@
 import "./App.css";
+import CalebuseStateFetch from "./components/CalebuseStateFetch";
 import Cart from "./components/cart/Cart";
 import ComplexState from "./components/ComplexState";
 import Conditional from "./components/Conditional";
@@ -25,7 +26,8 @@ function App() {
       </section> */}
       {/* <Cart /> */}
       {/* <EffectBasics /> */}
-      <DataFetching />
+      {/* <DataFetching /> */}
+      <CalebuseStateFetch />
     </div>
   );
 }

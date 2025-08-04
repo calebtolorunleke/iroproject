@@ -1,29 +1,32 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { PropagateLoader } from "react-spinners";
+import { useFetch } from "../Hooks/useFetch";
 
 const url = "https://jsonplaceholder.typicode.com/users";
 
 const DataFetching = () => {
-  const [users, setUser] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  //   const [users, setUser] = useState([]);
+  //   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const getUsers = async () => {
-      try {
-        const response = await fetch(url);
-        const data = await response.json();
-        console.log(data);
-        setUser(data);
-        setIsLoading(false);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    getUsers();
+  //   useEffect(() => {
+  //     const getUsers = async () => {
+  //       try {
+  //         const response = await fetch(url);
+  //         const data = await response.json();
+  //         console.log(data);
+  //         setUser(data);
+  //         setIsLoading(false);
+  //       } catch (error) {
+  //         console.log(error);
+  //       }
+  //     };
+  //     getUsers();
 
-    //fetch req url using js fetch promises .then and async wait using asynch code... return future value to us
-  }, []);
+  //     //fetch req url using js fetch promises .then and async wait using asynch code... return future value to us
+  //   }, []);
+
+  const { data: users, loading: isLoading } = useFetch(url);
 
   if (isLoading) {
     return (
