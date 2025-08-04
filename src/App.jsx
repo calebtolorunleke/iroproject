@@ -7,6 +7,7 @@ import DataFetching from "./components/DataFetching";
 import EffectBasics from "./components/EffectBasics";
 import EventHandling from "./components/EventHandling";
 import Products from "./components/Products";
+import Simpleform from "./components/Simpleform";
 import Simplestate from "./components/Simplestate";
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
       {/* <Cart /> */}
       {/* <EffectBasics /> */}
       {/* <DataFetching /> */}
-      <CalebuseStateFetch />
+      {/* <CalebuseStateFetch /> */}
+      <Simpleform />
     </div>
   );
 }
