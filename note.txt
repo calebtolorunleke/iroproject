@@ -1,0 +1,11 @@
+useEffect : hook that allows component to perform side effects. e.g fetching data, updating the dom
+useEffect accepts two data
+call back function and 2. functional run .
+
+
+useEffect(()=(
+    side effect
+),[])
+-once(initial render of component)
+-value 1, run whenever value 1 changes
+

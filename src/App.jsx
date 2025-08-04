@@ -2,6 +2,8 @@ import "./App.css";
 import Cart from "./components/cart/Cart";
 import ComplexState from "./components/ComplexState";
 import Conditional from "./components/Conditional";
+import DataFetching from "./components/DataFetching";
+import EffectBasics from "./components/EffectBasics";
 import EventHandling from "./components/EventHandling";
 import Products from "./components/Products";
 import Simplestate from "./components/Simplestate";
@@ -21,7 +23,9 @@ function App() {
           return <Products key={product.id} {...product} />;
         })}
       </section> */}
-      <Cart />
+      {/* <Cart /> */}
+      {/* <EffectBasics /> */}
+      <DataFetching />
     </div>
   );
 }
