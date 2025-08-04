@@ -30,7 +30,7 @@ const DayOneuseEffect = () => {
     return (
       <div className="flex items-center justify-center mx-auto h-screen text-[5rem]">
         <p>Loading....</p>
-        <RingLoader size={70} />
+        <RingLoader size={72} />
       </div>
     );
   }
