@@ -1,27 +1,30 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { RingLoader } from "react-spinners";
+import { useFetchDayone } from "../Hooks/useFetchDayone";
 
 const api = "https://jsonplaceholder.typicode.com/todos";
 
 const DayOneuseEffect = () => {
-  const [todos, setTodos] = useState([]);
-  const [loading, setLoading] = useState(true);
+  //   const [todos, setTodos] = useState([]);
+  //   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const getTodos = async () => {
-      try {
-        const data = await fetch(api);
-        const result = await data.json();
-        console.log(result);
-        setTodos(result);
-        setLoading(true);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    getTodos();
-  }, []);
+  //   useEffect(() => {
+  //     const getTodos = async () => {
+  //       try {
+  //         const data = await fetch(api);
+  //         const result = await data.json();
+  //         console.log(result);
+  //         setTodos(result);
+  //         setLoading(true);
+  //       } catch (error) {
+  //         console.log(error);
+  //       }
+  //     };
+  //     getTodos();
+  //   }, []);
+
+  const { todos, loading } = useFetchDayone(api);
 
   if (loading) {
     return (
