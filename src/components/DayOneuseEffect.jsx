@@ -15,7 +15,7 @@ const DayOneuseEffect = () => {
         const result = await data.json();
         console.log(result);
         setTodos(result);
-        setLoading(false);
+        setLoading(true);
       } catch (error) {
         console.log(error);
       }
