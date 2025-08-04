@@ -24,7 +24,7 @@ const CalebuseStateFetch = () => {
   if (isLoading) {
     return (
       <div className="flex flex-col gap-5 justify-center items-center h-screen text-5xl font-bold">
-        <p>Loading.....</p>
+        <p>Loading....</p>
         <MoonLoader />
       </div>
     );
