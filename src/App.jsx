@@ -5,6 +5,7 @@ import Complexform from "./components/Complexform";
 import ComplexState from "./components/ComplexState";
 import Conditional from "./components/Conditional";
 import DataFetching from "./components/DataFetching";
+import DayOneuseEffect from "./components/DayOneuseEffect";
 import EffectBasics from "./components/EffectBasics";
 import EventHandling from "./components/EventHandling";
 import Products from "./components/Products";
@@ -31,7 +32,8 @@ function App() {
       {/* <DataFetching /> */}
       {/* <CalebuseStateFetch /> */}
       {/* <Simpleform /> */}
-      <Complexform />
+      {/* <Complexform /> */}
+      <DayOneuseEffect />
     </div>
   );
 }
