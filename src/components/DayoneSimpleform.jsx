@@ -22,7 +22,7 @@ const DayoneSimpleform = () => {
           className="border px-2 py-2 focus:outline-red-300 rounded-sm"
         />
         <button className="w-full bg-purple-600 py-2 rounded-sm mt-5 text-white">
-          Submit
+          Submit It
         </button>
       </form>
     </div>
