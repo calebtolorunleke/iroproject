@@ -15,7 +15,7 @@ const DayoneSimpleform = () => {
           value={fullName}
           onChange={(e) => setfullName(fullName)}
         />
-        <label htmlFor="email">Email Addresses</label>
+        <label htmlFor="email">Email Address</label>
         <input
           type="email"
           placeholder="Enter email address"
