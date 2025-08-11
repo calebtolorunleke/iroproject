@@ -45,7 +45,7 @@ const Complexform = () => {
           value={user.email}
           onChange={handleChnage}
         />
-        <label htmlFor="address">Location</label>
+        <label htmlFor="address">Locations</label>
         <textarea
           name="location"
           id="address"
