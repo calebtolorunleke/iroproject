@@ -24,7 +24,7 @@ const Complexform = () => {
         className="w-[400px] p-3 shadow-2xl mx-auto my-9 rounded-2xl "
         onSubmit={handleSubmit}
       >
-        <h1 className="text-3xl">Register with us</h1>
+        <h1 className="text-3xl">Register with us @</h1>
         <label htmlFor="name">Full Name</label>
         <input
           type="text"
